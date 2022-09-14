@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_deliciousbakery_kelompokroti,access.deliciousbakery.kelompokroti,model_deliciousbakery_kelompokroti,,1,1,1,1
+access_deliciousbakery_roti,access.deliciousbakery.roti,model_deliciousbakery_roti,,1,1,1,1
+access_deliciousbakery_person,access.deliciousbakery.person,model_deliciousbakery_person,,1,1,1,1
+access_deliciousbakery_kasir,access.deliciousbakery.kasir,model_deliciousbakery_kasir,,1,1,1,1
+access_deliciousbakery_cleaningservice,access.deliciousbakery.cleaningservice,model_deliciousbakery_cleaningservice,,1,1,1,1
+access_deliciousbakery_supplier,access.deliciousbakery.supplier,model_deliciousbakery_supplier,,1,1,1,1
+access_deliciousbakery_penjualan,access.deliciousbakery.penjualan,model_deliciousbakery_penjualan,,1,1,1,1
+access_deliciousbakery_detailpenjualan,access.deliciousbakery.detailpenjualan,model_deliciousbakery_detailpenjualan,,1,1,1,1
+access_deliciousbakery_rotidatang,access.deliciousbakery.rotidatang,model_deliciousbakery_rotidatang,,1,1,1,1
+access_deliciousbakery_penjualanreport,access.deliciousbakery.penjualanreport,model_deliciousbakery_penjualanreport,,1,1,1,1

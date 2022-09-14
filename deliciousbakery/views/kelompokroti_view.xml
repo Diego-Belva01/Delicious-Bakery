@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- deliciousbakery.kelompokroti tree view -->
+    <record id="deliciousbakery_kelompokroti_view_tree" model="ir.ui.view">
+        <field name="name">deliciousbakery.kelompokroti.view.tree</field>
+        <field name="model">deliciousbakery.kelompokroti</field>
+        <field name="arch" type="xml">
+            <tree>
+             <field name="name"/>
+             <field name="kode_kelompok"/>
+             <field name="kode_rak"/>
+             <field name="jml_item"/>
+             <field name="daftar"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- deliciousbakery.kelompokroti form view -->
+    <record id="deliciousbakery_kelompokroti_view_form" model="ir.ui.view">
+        <field name="name">deliciousbakery.kelompokroti.view.form</field>
+        <field name="model">deliciousbakery.kelompokroti</field>
+        <field name="arch" type="xml">
+            <form string="Kelompok Roti">
+                <sheet>
+                    <group name="Kelompok" string="Letak Kelompok">
+                        <field name="name" required="1"/>
+                        <field name="kode_kelompok"/>
+                        <field name="jml_item"/>                      
+                    </group>
+                    <group name="Rak" string="Letak Roti">
+                        <field name="kode_rak"/>
+                        <field name="roti_id"/> 
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- deliciousbakery.kelompokroti action window -->
+    <record id="deliciousbakery_kelompokroti_action" model="ir.actions.act_window">
+        <field name="name">Kelompok Roti</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">deliciousbakery.kelompokroti</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="deliciousbakery_kelompokroti_menu_act" 
+              name="Kelompok Roti" 
+              parent="deliciousbakery_roti_menu_categ" 
+              action="deliciousbakery_kelompokroti_action" 
+              sequence="10"/>
+
+</odoo>

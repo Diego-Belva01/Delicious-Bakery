@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="addonsdeliciousbakery/deliciousbakery.list">
+      <field name="name">addonsdeliciousbakery/deliciousbakery list</field>
+      <field name="model">addonsdeliciousbakery/deliciousbakery.addonsdeliciousbakery/deliciousbakery</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="addonsdeliciousbakery/deliciousbakery.action_window">
+      <field name="name">addonsdeliciousbakery/deliciousbakery window</field>
+      <field name="res_model">addonsdeliciousbakery/deliciousbakery.addonsdeliciousbakery/deliciousbakery</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="addonsdeliciousbakery/deliciousbakery.action_server">
+      <field name="name">addonsdeliciousbakery/deliciousbakery server</field>
+      <field name="model_id" ref="model_addonsdeliciousbakery/deliciousbakery_addonsdeliciousbakery/deliciousbakery"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="addonsdeliciousbakery/deliciousbakery" id="addonsdeliciousbakery/deliciousbakery.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="addonsdeliciousbakery/deliciousbakery.menu_1" parent="addonsdeliciousbakery/deliciousbakery.menu_root"/>
+    <menuitem name="Menu 2" id="addonsdeliciousbakery/deliciousbakery.menu_2" parent="addonsdeliciousbakery/deliciousbakery.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="addonsdeliciousbakery/deliciousbakery.menu_1_list" parent="addonsdeliciousbakery/deliciousbakery.menu_1"
+              action="addonsdeliciousbakery/deliciousbakery.action_window"/>
+    <menuitem name="Server to list" id="addonsdeliciousbakery/deliciousbakery" parent="addonsdeliciousbakery/deliciousbakery.menu_2"
+              action="addonsdeliciousbakery/deliciousbakery.action_server"/>
+-->
+  </data>
+</odoo>
